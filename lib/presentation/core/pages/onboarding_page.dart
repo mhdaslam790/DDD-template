@@ -5,10 +5,9 @@ import 'package:flutter_template/presentation/core/widgets/layout/app_scaffold.d
 import 'package:flutter_template/presentation/core/widgets/utility/dots_indicator.dart';
 import 'package:flutter_template/presentation/routes/router.dart';
 
-
 @RoutePage()
 class OnboardingPage extends StatefulWidget {
-  const OnboardingPage({Key? key}) : super(key: key);
+  const OnboardingPage({super.key});
 
   @override
   OnboardingPageState createState() => OnboardingPageState();
@@ -122,10 +121,10 @@ class OnboardingPageState extends State<OnboardingPage> {
 
 class PageViewPages extends StatelessWidget {
   const PageViewPages({
-    Key? key,
+    super.key,
     required this.text,
     required this.img,
-  }) : super(key: key);
+  });
   final String text;
   final String img;
 

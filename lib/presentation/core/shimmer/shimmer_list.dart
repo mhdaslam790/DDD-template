@@ -3,10 +3,10 @@ import 'package:flutter_template/presentation/core/shimmer/shimmer_list_tile.dar
 
 class ShimmerList extends StatelessWidget {
   const ShimmerList({
-    Key? key,
+    super.key,
     this.margin,
     this.noOfTiles,
-  }) : super(key: key);
+  });
   final EdgeInsets? margin;
   final int? noOfTiles;
 

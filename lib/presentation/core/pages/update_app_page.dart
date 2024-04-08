@@ -6,7 +6,7 @@ import 'package:flutter_template/presentation/routes/router.dart';
 
 @RoutePage()
 class UpdateAppPage extends StatefulWidget {
-  const UpdateAppPage({Key? key}) : super(key: key);
+  const UpdateAppPage({super.key});
 
   @override
   UpdateAppPageState createState() => UpdateAppPageState();

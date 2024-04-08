@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class LifecycleWatcher extends StatefulWidget {
   final Widget child;
 
-  const LifecycleWatcher({Key? key, required this.child}) : super(key: key);
+  const LifecycleWatcher({super.key, required this.child});
   @override
   LifecycleWatcherState createState() => LifecycleWatcherState();
 }
@@ -45,7 +45,7 @@ class LifecycleWatcherState extends State<LifecycleWatcher>
       default:
     }
     debugPrint('App Life Cycle state ===> $_lastLifecycleState.');
-    
+
     return widget.child;
   }
 }

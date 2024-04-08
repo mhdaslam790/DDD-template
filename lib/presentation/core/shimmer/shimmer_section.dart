@@ -4,26 +4,26 @@ import 'package:flutter_template/presentation/core/shimmer/shimmer_card.dart';
 import 'package:flutter_template/presentation/core/shimmer/shimmer_skeleton_bar.dart';
 
 class ShimmerSection extends StatelessWidget {
-  const ShimmerSection({Key? key}) : super(key: key);
+  const ShimmerSection({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CustomShimmer(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: EdgeInsets.symmetric(horizontal: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 ShimmerSkeletonBar(width: 80),
                 ShimmerSkeletonBar(width: 40),
               ],
             ),
           ),
         ),
-        const ShimmerCard(),
+        ShimmerCard(),
       ],
     );
   }

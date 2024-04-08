@@ -3,10 +3,10 @@ import 'package:flutter_template/presentation/core/styles/app_colors.dart';
 
 class ShimmerSkeletonBar extends StatelessWidget {
   const ShimmerSkeletonBar({
-    Key? key,
+    super.key,
     this.width,
     this.height,
-  }) : super(key: key);
+  });
   final double? width;
   final double? height;
 

@@ -3,12 +3,12 @@ import 'package:flutter_template/presentation/core/styles/app_colors.dart';
 
 class CustomChoiceChip extends StatelessWidget {
   const CustomChoiceChip({
-    Key? key,
+    super.key,
     required this.label,
     this.icon,
     this.onSelected,
     required this.selected,
-  }) : super(key: key);
+  });
   final String label;
   final Widget? icon;
   final bool selected;
@@ -20,7 +20,7 @@ class CustomChoiceChip extends StatelessWidget {
       avatar: icon,
       label: Text(
         label,
-        style: Theme.of(context).textTheme.bodyText2!.copyWith(
+        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
               color: selected ? AppColors.black : AppColors.white,
               fontWeight: FontWeight.w400,
             ),

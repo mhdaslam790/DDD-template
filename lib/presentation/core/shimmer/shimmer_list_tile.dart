@@ -4,12 +4,12 @@ import 'package:flutter_template/presentation/core/shimmer/shimmer_skeleton_bar.
 import 'package:flutter_template/presentation/core/shimmer/shimmer_skeleton_circle.dart';
 
 class ShimmerListTile extends StatelessWidget {
-  const ShimmerListTile({Key? key}) : super(key: key);
+  const ShimmerListTile({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      contentPadding: const EdgeInsets.symmetric(
+    return const ListTile(
+      contentPadding: EdgeInsets.symmetric(
         horizontal: 20,
         vertical: 8,
       ),
@@ -17,24 +17,24 @@ class ShimmerListTile extends StatelessWidget {
       title: CustomShimmer(
         child: Row(
           children: [
-            const ShimmerSkeletonCircle(radius: 50),
-            const SizedBox(width: 14),
+            ShimmerSkeletonCircle(radius: 50),
+            SizedBox(width: 14),
             Expanded(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   ShimmerSkeletonBar(width: 150),
                   SizedBox(height: 5),
                   ShimmerSkeletonBar(width: 80),
                 ],
               ),
             ),
-            const SizedBox(width: 10),
+            SizedBox(width: 10),
             Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.end,
-              children: const [
+              children: [
                 ShimmerSkeletonBar(width: 50),
                 SizedBox(height: 5),
                 ShimmerSkeletonBar(),

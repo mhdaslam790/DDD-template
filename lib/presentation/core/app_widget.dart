@@ -12,7 +12,7 @@ import 'package:flutter_template/presentation/routes/observer/route_observer.dar
 import 'package:flutter_template/presentation/routes/router.dart';
 
 class AppWidget extends StatelessWidget {
-  AppWidget({Key? key}) : super(key: key);
+  AppWidget({super.key});
   final _appRouter = AppRouter();
   @override
   Widget build(BuildContext context) {

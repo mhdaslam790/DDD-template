@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 class DotsIndicator extends AnimatedWidget {
   const DotsIndicator({
-    Key? key,
+    super.key,
     required this.controller,
     required this.itemCount,
     required this.onPageSelected,
     this.color = const Color(0xFF3D405B),
-  }) : super(key: key, listenable: controller);
+  }) : super(listenable: controller);
 
   final PageController controller;
   final int itemCount;

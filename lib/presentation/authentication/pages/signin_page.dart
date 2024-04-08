@@ -16,7 +16,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 @RoutePage()
 class SigninPage extends StatefulWidget {
-  const SigninPage({Key? key}) : super(key: key);
+  const SigninPage({super.key});
 
   @override
   State<SigninPage> createState() => _SigninPageState();

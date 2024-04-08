@@ -50,7 +50,7 @@ class AppScaffold extends StatelessWidget {
   final String? restorationId;
 
   const AppScaffold({
-    Key? key,
+    super.key,
     this.appBar,
     this.body,
     this.floatingActionButton,
@@ -74,7 +74,7 @@ class AppScaffold extends StatelessWidget {
     this.drawerEnableOpenDragGesture = true,
     this.endDrawerEnableOpenDragGesture = true,
     this.restorationId,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.example.flutter_template">
+  package="com.new.package.name">
 
   <!-- List of all possible permissions supported. Disable which are not required by the application to pass play store review. -->
   <!--
@@ -76,7 +76,7 @@
     <!-- Permissions options for the `system alert windows` group -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
-    <!-- Permissions options for the `request install packages` group -->
+    <!-- Permissions options for the `request install packags` group -->
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 
     <!-- Permissions options for the `access notification policy` group -->

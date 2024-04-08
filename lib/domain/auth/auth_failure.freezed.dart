@@ -12,7 +12,7 @@ part of 'auth_failure.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$AuthFailure {
@@ -134,7 +134,7 @@ class _$CancelledByUserImpl implements CancelledByUser {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType && other is _$CancelledByUserImpl);
   }
@@ -287,7 +287,7 @@ class _$ServerErrorImpl implements ServerError {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$ServerErrorImpl &&
@@ -435,7 +435,7 @@ class _$EmailAlreadyInUseImpl implements EmailAlreadyInUse {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType && other is _$EmailAlreadyInUseImpl);
   }
@@ -570,7 +570,7 @@ class _$UserNotFoundImpl implements UserNotFound {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType && other is _$UserNotFoundImpl);
   }
@@ -723,7 +723,7 @@ class _$RequiredRecentLoginImpl implements RequiredRecentLogin {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RequiredRecentLoginImpl &&
@@ -873,7 +873,7 @@ class _$DeleteAccountFailureImpl implements DeleteAccountFailure {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$DeleteAccountFailureImpl);
@@ -1013,7 +1013,7 @@ class _$InvalidEmailAndPasswordCombinationImpl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$InvalidEmailAndPasswordCombinationImpl);

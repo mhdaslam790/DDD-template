@@ -3,13 +3,13 @@ import 'package:flutter_template/presentation/core/styles/app_colors.dart';
 
 class RoundedFilledButton extends StatelessWidget {
   const RoundedFilledButton({
-    Key? key,
+    super.key,
     required this.text,
     required this.onTap,
     this.width,
     this.disable = false,
     this.arrow = false,
-  }) : super(key: key);
+  });
   final String? text;
   final VoidCallback onTap;
   final double? width;

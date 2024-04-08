@@ -3,11 +3,11 @@ import 'package:flutter_template/presentation/core/styles/app_theme.dart';
 
 class LinkText extends StatelessWidget {
   const LinkText({
-    Key? key,
+    super.key,
     required this.text,
     required this.onTap,
     this.hasUnderline = false,
-  }) : super(key: key);
+  });
   final String text;
   final bool hasUnderline;
   final VoidCallback onTap;

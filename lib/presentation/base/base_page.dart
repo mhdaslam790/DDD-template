@@ -4,7 +4,7 @@ import 'package:flutter_template/presentation/core/widgets/layout/app_scaffold.d
 
 @RoutePage()
 class BasePage extends StatelessWidget {
-  const BasePage({Key? key}) : super(key: key);
+  const BasePage({super.key});
 
   @override
   Widget build(BuildContext context) {

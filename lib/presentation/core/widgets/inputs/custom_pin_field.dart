@@ -4,14 +4,14 @@ import 'package:pin_code_text_field/pin_code_text_field.dart';
 
 class CustomPinField extends StatelessWidget {
   const CustomPinField({
-    Key? key,
+    super.key,
     required this.controller,
     required this.onTextChanged,
     this.onDone,
     this.length = 4,
     this.labelText,
     this.autofocus = false,
-  }) : super(key: key);
+  });
   final TextEditingController controller;
   final Function(String) onTextChanged;
   final Function(String)? onDone;
@@ -26,7 +26,7 @@ class CustomPinField extends StatelessWidget {
         if (labelText != null) ...[
           Text(
             labelText!,
-            style: Theme.of(context).textTheme.bodyText2,
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           const SizedBox(height: 10),
         ],

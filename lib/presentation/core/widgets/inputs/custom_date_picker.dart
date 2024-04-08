@@ -9,12 +9,12 @@ import 'package:intl/intl.dart';
 
 class CustomDatePicker extends StatefulWidget {
   const CustomDatePicker({
-    Key? key,
+    super.key,
     required this.dateController,
     this.labelText,
     this.hintText,
     this.initialDate,
-  }) : super(key: key);
+  });
   final TextEditingController dateController;
   final String? labelText;
   final String? hintText;

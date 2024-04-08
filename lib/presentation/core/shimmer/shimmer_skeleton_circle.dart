@@ -3,9 +3,9 @@ import 'package:flutter_template/presentation/core/styles/app_colors.dart';
 
 class ShimmerSkeletonCircle extends StatelessWidget {
   const ShimmerSkeletonCircle({
-    Key? key,
+    super.key,
     this.radius,
-  }) : super(key: key);
+  });
   final double? radius;
 
   @override

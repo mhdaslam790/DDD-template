@@ -3,14 +3,14 @@ import 'package:flutter_template/presentation/core/styles/app_colors.dart';
 
 class CustomDropdown extends StatelessWidget {
   const CustomDropdown({
-    Key? key,
+    super.key,
     this.labelText,
     required this.hintText,
     this.value,
     required this.items,
     required this.onChanged,
     this.validator,
-  }) : super(key: key);
+  });
   final String? labelText;
   final String? hintText;
   final String? value;
@@ -41,7 +41,7 @@ class CustomDropdown extends StatelessWidget {
           if (labelText != null) ...[
             Text(
               labelText!,
-              style: Theme.of(context).textTheme.bodyText2!.copyWith(
+              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     color: Colors.black54,
                   ),
             ),

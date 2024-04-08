@@ -12,7 +12,7 @@ part of 'auth_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$AuthEvent {
@@ -187,7 +187,7 @@ class _$RegisterWithEmailAndPasswordImpl
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$RegisterWithEmailAndPasswordImpl &&
@@ -396,7 +396,7 @@ class _$SignInWithEmailAndPasswordImpl implements _SignInWithEmailAndPassword {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SignInWithEmailAndPasswordImpl &&
@@ -575,7 +575,7 @@ class _$SignOutImpl implements SignOut {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType && other is _$SignOutImpl);
   }
@@ -735,7 +735,7 @@ class _$CheckAuthStateImpl implements CheckAuthState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType && other is _$CheckAuthStateImpl);
   }
@@ -914,7 +914,7 @@ class _$SendEmailConfirmationImpl implements _SendEmailConfirmation {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SendEmailConfirmationImpl &&
@@ -1089,7 +1089,7 @@ class _$DeleteAccountImpl implements _DeleteAccount {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType && other is _$DeleteAccountImpl);
   }
@@ -1267,7 +1267,7 @@ class _$UpdateEmailAddressImpl implements _UpdateEmailAddress {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$UpdateEmailAddressImpl &&
@@ -1463,7 +1463,7 @@ class _$UpdateConnectivityStatusImpl implements _UpdateConnectivityStatus {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$UpdateConnectivityStatusImpl &&
@@ -1640,7 +1640,7 @@ class _$CheckConnectivityStatusImpl implements _CheckConnectivityStatus {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$CheckConnectivityStatusImpl);
@@ -1969,7 +1969,7 @@ class _$AuthStateImpl implements _AuthState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AuthStateImpl &&

@@ -3,13 +3,13 @@ import 'package:flutter_template/presentation/core/styles/app_colors.dart';
 
 class RoundedOutlineButton extends StatelessWidget {
   const RoundedOutlineButton({
-    Key? key,
+    super.key,
     required this.text,
     required this.onTap,
     this.width,
     this.icon,
     this.arrow = false,
-  }) : super(key: key);
+  });
   final String? text;
   final VoidCallback onTap;
   final double? width;

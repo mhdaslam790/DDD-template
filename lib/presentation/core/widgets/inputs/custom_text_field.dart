@@ -4,7 +4,7 @@ import 'package:flutter_template/presentation/core/styles/app_colors.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField({
-    Key? key,
+    super.key,
     this.controller,
     this.hintText,
     this.keyboardType,
@@ -18,7 +18,7 @@ class CustomTextField extends StatelessWidget {
     this.validator,
     this.inputFormatters,
     this.maxLines = 1,
-  }) : super(key: key);
+  });
   final List<TextInputFormatter>? inputFormatters;
   final TextEditingController? controller;
   final String? hintText;

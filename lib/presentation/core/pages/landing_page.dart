@@ -5,10 +5,9 @@ import 'package:flutter_template/presentation/core/widgets/layout/app_scaffold.d
 import 'package:flutter_template/presentation/core/widgets/layout/logo_widget.dart';
 import 'package:flutter_template/presentation/routes/router.dart';
 
-
 @RoutePage()
 class LandingPage extends StatelessWidget {
-  const LandingPage({Key? key}) : super(key: key);
+  const LandingPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +22,7 @@ class LandingPage extends StatelessWidget {
             RoundedFilledButton(
               text: "Sign up",
               onTap: () {
-                  AutoRouter.of(context).push(const SignupRoute());
+                AutoRouter.of(context).push(const SignupRoute());
               },
             ),
             const SizedBox(height: 24.0),

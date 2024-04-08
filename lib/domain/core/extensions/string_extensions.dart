@@ -2,7 +2,6 @@ import 'dart:developer';
 
 import 'package:flutter_template/domain/core/extensions/numeric_extensions.dart';
 
-
 extension StringX on String {
   String formatCategory() {
     final String formattedCategory =
