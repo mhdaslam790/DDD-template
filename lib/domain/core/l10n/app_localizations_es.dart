@@ -2,37 +2,31 @@ import 'app_localizations.dart';
 
 /// The translations for Spanish Castilian (`es`).
 class AppLocalizationsEs extends AppLocalizations {
-  AppLocalizationsEs([super.locale = 'es']);
+  AppLocalizationsEs([String locale = 'es']) : super(locale);
 
   @override
   String get thisFieldIsRequired => 'Este espacio es requerido';
 
   @override
-  String get pleaseEnterAnEmailAddress =>
-      'Por favor, ingresa tu correo electrónico';
+  String get pleaseEnterAnEmailAddress => 'Por favor, ingresa tu correo electrónico';
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      'Por favor, ingresa un correo electrónico valido';
+  String get pleaseEnterAValidEmailAddress => 'Por favor, ingresa un correo electrónico valido';
 
   @override
-  String get thisFieldCannotExceed100characters =>
-      'Este espacio no puede exceder los 100 carácteres';
+  String get thisFieldCannotExceed100characters => 'Este espacio no puede exceder los 100 carácteres';
 
   @override
-  String get pleaseEnterAPhoneNumber =>
-      'Por favor, ingresa tu número de teléfono';
+  String get pleaseEnterAPhoneNumber => 'Por favor, ingresa tu número de teléfono';
 
   @override
-  String get pleaseEnterAValidPhoneNumber =>
-      'Por favor, ingresa un número de teléfono valido';
+  String get pleaseEnterAValidPhoneNumber => 'Por favor, ingresa un número de teléfono valido';
 
   @override
   String get pleaseEnterAPassword => 'Por favor, ingresa una contraseña';
 
   @override
-  String get passwordTooShort =>
-      'Contraseña muy corta. Por favor, ingresa una contraseña con al menos 6 carácteres';
+  String get passwordTooShort => 'Contraseña muy corta. Por favor, ingresa una contraseña con al menos 6 carácteres';
 
   @override
   String get dontForgetYourName => '¡No te olvides de tu nombre!';
@@ -50,8 +44,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get pleaseEnterValidDecimal => 'Introduce un número decimal valido';
 
   @override
-  String get maximumAmountCannotExceed =>
-      'El monto máximo no puede ser mayor a 100,000';
+  String get maximumAmountCannotExceed => 'El monto máximo no puede ser mayor a 100,000';
 
   @override
   String get validIntegerValue => 'Introduce un valor entero valido';
