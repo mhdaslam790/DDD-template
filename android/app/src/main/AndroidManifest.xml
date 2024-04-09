@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.new.package.name">
+  package="com.example.flutter_template">
 
   <!-- List of all possible permissions supported. Disable which are not required by the application to pass play store review. -->
   <!--

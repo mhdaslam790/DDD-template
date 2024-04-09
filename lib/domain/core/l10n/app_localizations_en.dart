@@ -2,7 +2,7 @@ import 'app_localizations.dart';
 
 /// The translations for English (`en`).
 class AppLocalizationsEn extends AppLocalizations {
-  AppLocalizationsEn([String locale = 'en']) : super(locale);
+  AppLocalizationsEn([super.locale = 'en']);
 
   @override
   String get thisFieldIsRequired => 'This field is required';
@@ -11,22 +11,26 @@ class AppLocalizationsEn extends AppLocalizations {
   String get pleaseEnterAnEmailAddress => 'Please enter an email address';
 
   @override
-  String get pleaseEnterAValidEmailAddress => 'Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      'Please enter a valid email address';
 
   @override
-  String get thisFieldCannotExceed100characters => 'This field cannot exceed 100 characters';
+  String get thisFieldCannotExceed100characters =>
+      'This field cannot exceed 100 characters';
 
   @override
   String get pleaseEnterAPhoneNumber => 'Please enter a phone number';
 
   @override
-  String get pleaseEnterAValidPhoneNumber => 'Please enter a valid phone number';
+  String get pleaseEnterAValidPhoneNumber =>
+      'Please enter a valid phone number';
 
   @override
   String get pleaseEnterAPassword => 'Please enter a password';
 
   @override
-  String get passwordTooShort => 'Password too short. Please enter a password of atleast 6 length';
+  String get passwordTooShort =>
+      'Password too short. Please enter a password of atleast 6 length';
 
   @override
   String get dontForgetYourName => 'Don’t forget your name!';
@@ -44,7 +48,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get pleaseEnterValidDecimal => 'Please enter a valid decimal value';
 
   @override
-  String get maximumAmountCannotExceed => 'Maximum amount cannot exceed 100,000';
+  String get maximumAmountCannotExceed =>
+      'Maximum amount cannot exceed 100,000';
 
   @override
   String get validIntegerValue => 'Please enter a valid integer value';
