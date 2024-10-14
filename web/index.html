@@ -29,6 +29,24 @@
   <title>flutter_template</title>
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" type="text/css" href="splash/style.css">
+  <script>
+  if (
+    navigator.userAgent.indexOf("Safari") !== -1 &&
+    navigator.userAgent.indexOf("Chrome") === -1
+  ) {
+    var originalGetContext = HTMLCanvasElement.prototype.getContext;
+    HTMLCanvasElement.prototype.getContext = function () {
+      var contextType = arguments[0];
+      if (contextType === "webgl2") {
+        return;
+      }
+      return originalGetContext.apply(
+        this,
+        [contextType].concat(Array.prototype.slice.call(arguments, 1)),
+      );
+    };
+  }
+</script>
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
