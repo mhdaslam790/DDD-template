@@ -16,7 +16,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: Colors.black,
       leading: IconButton(
         onPressed: () {
-          AutoRouter.of(context).pop();
+          AutoRouter.of(context).maybePop();
         },
         icon: const Icon(
           Icons.keyboard_arrow_left,

@@ -9,65 +9,6 @@
 
 part of 'router.dart';
 
-abstract class _$AppRouter extends RootStackRouter {
-  // ignore: unused_element
-  _$AppRouter({super.navigatorKey});
-
-  @override
-  final Map<String, PageFactory> pagesMap = {
-    BaseRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const BasePage(),
-      );
-    },
-    ForgotPasswordRoute.name: (routeData) {
-      final args = routeData.argsAs<ForgotPasswordRouteArgs>(
-          orElse: () => const ForgotPasswordRouteArgs());
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: ForgotPasswordPage(key: args.key),
-      );
-    },
-    LandingRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const LandingPage(),
-      );
-    },
-    OnboardingRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const OnboardingPage(),
-      );
-    },
-    SigninRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const SigninPage(),
-      );
-    },
-    SignupRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const SignupPage(),
-      );
-    },
-    SplashRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const SplashPage(),
-      );
-    },
-    UpdateAppRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const UpdateAppPage(),
-      );
-    },
-  };
-}
-
 /// generated route for
 /// [BasePage]
 class BaseRoute extends PageRouteInfo<void> {
@@ -79,7 +20,12 @@ class BaseRoute extends PageRouteInfo<void> {
 
   static const String name = 'BaseRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const BasePage();
+    },
+  );
 }
 
 /// generated route for
@@ -96,8 +42,14 @@ class ForgotPasswordRoute extends PageRouteInfo<ForgotPasswordRouteArgs> {
 
   static const String name = 'ForgotPasswordRoute';
 
-  static const PageInfo<ForgotPasswordRouteArgs> page =
-      PageInfo<ForgotPasswordRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<ForgotPasswordRouteArgs>(
+          orElse: () => const ForgotPasswordRouteArgs());
+      return ForgotPasswordPage(key: args.key);
+    },
+  );
 }
 
 class ForgotPasswordRouteArgs {
@@ -122,7 +74,12 @@ class LandingRoute extends PageRouteInfo<void> {
 
   static const String name = 'LandingRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const LandingPage();
+    },
+  );
 }
 
 /// generated route for
@@ -136,7 +93,12 @@ class OnboardingRoute extends PageRouteInfo<void> {
 
   static const String name = 'OnboardingRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const OnboardingPage();
+    },
+  );
 }
 
 /// generated route for
@@ -150,7 +112,12 @@ class SigninRoute extends PageRouteInfo<void> {
 
   static const String name = 'SigninRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SigninPage();
+    },
+  );
 }
 
 /// generated route for
@@ -164,7 +131,12 @@ class SignupRoute extends PageRouteInfo<void> {
 
   static const String name = 'SignupRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SignupPage();
+    },
+  );
 }
 
 /// generated route for
@@ -178,7 +150,12 @@ class SplashRoute extends PageRouteInfo<void> {
 
   static const String name = 'SplashRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SplashPage();
+    },
+  );
 }
 
 /// generated route for
@@ -192,5 +169,10 @@ class UpdateAppRoute extends PageRouteInfo<void> {
 
   static const String name = 'UpdateAppRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const UpdateAppPage();
+    },
+  );
 }

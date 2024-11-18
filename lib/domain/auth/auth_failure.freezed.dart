@@ -105,6 +105,9 @@ class _$AuthFailureCopyWithImpl<$Res, $Val extends AuthFailure>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of AuthFailure
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -121,6 +124,9 @@ class __$$CancelledByUserImplCopyWithImpl<$Res>
   __$$CancelledByUserImplCopyWithImpl(
       _$CancelledByUserImpl _value, $Res Function(_$CancelledByUserImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of AuthFailure
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -259,6 +265,8 @@ class __$$ServerErrorImplCopyWithImpl<$Res>
       _$ServerErrorImpl _value, $Res Function(_$ServerErrorImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AuthFailure
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -297,7 +305,9 @@ class _$ServerErrorImpl implements ServerError {
   @override
   int get hashCode => Object.hash(runtimeType, error);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AuthFailure
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ServerErrorImplCopyWith<_$ServerErrorImpl> get copyWith =>
@@ -403,7 +413,10 @@ abstract class ServerError implements AuthFailure {
   const factory ServerError(final String error) = _$ServerErrorImpl;
 
   String get error;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AuthFailure
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ServerErrorImplCopyWith<_$ServerErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -422,6 +435,9 @@ class __$$EmailAlreadyInUseImplCopyWithImpl<$Res>
   __$$EmailAlreadyInUseImplCopyWithImpl(_$EmailAlreadyInUseImpl _value,
       $Res Function(_$EmailAlreadyInUseImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of AuthFailure
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -557,6 +573,9 @@ class __$$UserNotFoundImplCopyWithImpl<$Res>
   __$$UserNotFoundImplCopyWithImpl(
       _$UserNotFoundImpl _value, $Res Function(_$UserNotFoundImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of AuthFailure
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -695,6 +714,8 @@ class __$$RequiredRecentLoginImplCopyWithImpl<$Res>
       $Res Function(_$RequiredRecentLoginImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AuthFailure
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -733,7 +754,9 @@ class _$RequiredRecentLoginImpl implements RequiredRecentLogin {
   @override
   int get hashCode => Object.hash(runtimeType, message);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AuthFailure
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$RequiredRecentLoginImplCopyWith<_$RequiredRecentLoginImpl> get copyWith =>
@@ -841,7 +864,10 @@ abstract class RequiredRecentLogin implements AuthFailure {
       _$RequiredRecentLoginImpl;
 
   String get message;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AuthFailure
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RequiredRecentLoginImplCopyWith<_$RequiredRecentLoginImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -860,6 +886,9 @@ class __$$DeleteAccountFailureImplCopyWithImpl<$Res>
   __$$DeleteAccountFailureImplCopyWithImpl(_$DeleteAccountFailureImpl _value,
       $Res Function(_$DeleteAccountFailureImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of AuthFailure
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -999,6 +1028,9 @@ class __$$InvalidEmailAndPasswordCombinationImplCopyWithImpl<$Res>
       _$InvalidEmailAndPasswordCombinationImpl _value,
       $Res Function(_$InvalidEmailAndPasswordCombinationImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of AuthFailure
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc

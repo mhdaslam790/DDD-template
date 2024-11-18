@@ -38,7 +38,7 @@ class ForgotPasswordPage extends StatelessWidget {
                 Fluttertoast.showToast(
                   msg: "Password reset email sent successfully.",
                 );
-                AutoRouter.of(context).pop();
+                AutoRouter.of(context).maybePop();
               },
             );
           },

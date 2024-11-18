@@ -81,7 +81,7 @@ class _CustomDatePickerState extends State<CustomDatePicker> {
                         widget.dateController.text =
                             dateFormat.format(selectedDate).toString();
                       });
-                      AutoRouter.of(context).pop();
+                      AutoRouter.of(context).maybePop();
                     },
                   ),
                 ),

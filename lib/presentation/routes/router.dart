@@ -14,7 +14,7 @@ part 'router.gr.dart';
 @AutoRouterConfig(
   replaceInRouteName: "Page,Route",
 )
-class AppRouter extends _$AppRouter {
+class AppRouter extends RootStackRouter {
   @override
   List<AutoRoute> get routes => [
         ///[Core]
